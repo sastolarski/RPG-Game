@@ -8,37 +8,54 @@
     <script src="assets/javascript/game.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
     <h1>Star Wars RPG Game</h1>
 
-    <div id="container">
-        <div id="characterChoiceRow"> <!--holds all characters ready for selection-->
-            <img src="http://via.placeholder.com/150x150" id="img1">
-            <img src="http://via.placeholder.com/150x150" id="img2">
-            <img src="http://via.placeholder.com/150x150" id="img3">
-            <img src="http://via.placeholder.com/150x150" id="img4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
 
+                <h3>Select your character</h3>
+                
+            </div>
+        </div>
+        <div class="row" id="characterRow">
+            <div class="col-md-6" id="hero">
+
+                <!--where character images will be displayed and single character will be displayed after choice-->
+
+            </div>
+
+            <div class="col-md-6" id="enemy">
+
+                <!--where enemy will be displayed after choice-->
+
+            </div>
         </div>
 
-        <div id="row2">
-            <h2>Your Character</h2>
-            <!--character image moves here after selection is made-->
+        <div class="row" id="attackButtonAndDisplay">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary">Attack</button>
+                <div class="jumbotron" id="attackDisplay"></div>
+                <!--display to show the attack value + its change and also the counter attack value-->
+
+            </div>
         </div>
 
-        <div id="enemiesRow">
-            <!--other 3 remaining characters move here afte character selection is made-->
-            <!--you then select an enemy and it moves up to #row2 and the battle is ready to begin-->
+        <div class="row" id="enemiesRow">
+            <div class="col-md-12">
+
+                <!--where the enemies will be until they are selected-->
+
+            </div>
         </div>
 
-        <div id="attackButton">
-            <button id="attack">Attack!</button>
-        </div>
 
-        <div id="results">
 
-        </div>
     </div>
     
 </body>
