@@ -1,5 +1,7 @@
 //objects for each character? with hit points, attack power, and counter attack power, and function for attacking and function for counter attack.
 
+$(document).ready(function(){
+    
 var characters = {
 
     "luke" : {
@@ -30,3 +32,12 @@ var characters = {
         counterAttack : 12
     }
 };
+
+
+
+
+
+
+
+
+});
