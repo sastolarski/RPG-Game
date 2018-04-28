@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Star Wars RPG Game</title>
-    <script src="assets/javascript/game.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
@@ -17,7 +16,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="select">
 
                 <h3>Select your character</h3>
                 
@@ -25,10 +24,18 @@
         </div>
         <div class="row" id="characterRow">
             <div class="col-md-6" id="hero">
-                <div id="luke"></div>
-                <div id="hanSolo"></div>
-                <div id="greedo"></div>
-                <div id="bobaFett"></div>
+                <div id="luke">
+                    <!-- <img src="assets/css/images/luke.png" alt="luke" class="char"> -->
+                </div>
+                <div id="hanSolo">
+                    <!-- <img src="assets/css/images/hansolo.png" alt="han" class="char"> -->
+                </div>
+                <div id="greedo">
+                    <!-- <img src="assets/css/images/greedo.png" alt="alien" class="char"> -->
+                </div>
+                <div id="c3po">
+                    <!-- <img src="assets/css/images/c3po.png" alt="robot" class="char"> -->
+                </div>
                 <!--where character images will be displayed and single character will be displayed after choice-->
 
             </div>
@@ -60,6 +67,9 @@
 
 
     </div>
-    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+ 
 </body>
 </html>
