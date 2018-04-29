@@ -18,6 +18,14 @@ $(document).ready(function() {
         attack: 14,
         imageUrl: "assets/images/hansolo.png",
         enemyAttackBack: 5
+    },
+    "C3P0": {
+      name: "C3P0",
+      health: 180,
+      attack: 7,
+      imageUrl: "assets/images/c3po.png",
+      enemyAttackBack: 25
+    
       },
       "Greedo": {
         name: "Greedo",
@@ -25,13 +33,6 @@ $(document).ready(function() {
         attack: 8,
         imageUrl: "assets/images/greedo.png",
         enemyAttackBack: 20
-      },
-      "c3p0": {
-        name: "C3P0",
-        health: 180,
-        attack: 7,
-        imageUrl: "assets/images/c3po.png",
-        enemyAttackBack: 25
       }
     };
   
