@@ -1,76 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Star Wars RPG Game</title>
+<html lang="en-us">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<head>
+		<meta charset="UTF-8">
+		<title>Star Wars with jQuery!</title>
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- jQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Game Logic -->
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+	</head>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
-    <h1>Star Wars RPG Game</h1>
+	<body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12" id="select">
+		<div class="main-section-title">Star Wars RPG!</div>
+		<div id="main-game-section">
+			<!-- Where the characters are initially available to be selected. -->
+			<div id="characters-section">
+				<div class="section-title">Select Your Character</div>
+			</div>
+			
+			<!-- Section for our selected character. -->
+			<div id="selected-character-section">
+				<div class="section-title">Your Character</div>
+				<!-- Where our selected character will appear. -->
+				<div id="selected-character"></div>
+			</div>
 
-                <h3>Select your character</h3>
-                
-                
-            </div>
-        </div>
-        <div class="row" id="characterRow">
-            <div class="col-md-6" id="hero">
-                <div id="luke">
-                    <!-- <img src="assets/css/images/luke.png" alt="luke" class="char"> -->
-                </div>
-                <div id="hanSolo">
-                    <!-- <img src="assets/css/images/hansolo.png" alt="han" class="char"> -->
-                </div>
-                <div id="greedo">
-                    <!-- <img src="assets/css/images/greedo.png" alt="alien" class="char"> -->
-                </div>
-                <div id="c3po">
-                    <!-- <img src="assets/css/images/c3po.png" alt="robot" class="char"> -->
-                </div>
-                <!--where character images will be displayed and single character will be displayed after choice-->
+			<!-- Where our enemies available to attack will appear. -->
+			<div id="available-to-attack-section">
+				<div class="section-title">Enemies Available To Attack</div>
+			</div>
 
-            </div>
+			<div class="section-title">Fight Section</div>
+			<div id="fight-section">
+				<button id="attack-button">Attack</button>
+			</div>
 
-            <div class="col-md-6" id="enemy">
+			<div id="action">
+				<div class="character-section">
+					<div class="section-title">Defender</div>
+					<!-- Where our defender will appear. -->
+					<div id="defender"></div>
+				</div>
+			</div>
 
-                <!--where enemy will be displayed after choice-->
+		</div>
+		<!-- Area for game messages. -->
+		<div id="game-message"></div>
+	</body>
 
-            </div>
-        </div>
-
-        <div class="row" id="attackButtonAndDisplay">
-            <div class="col-md-12">
-                <button type="button" class="btn btn-primary">Attack</button>
-                <div class="jumbotron" id="attackDisplay"></div>
-                <!--display to show the attack value + its change and also the counter attack value-->
-
-            </div>
-        </div>
-
-        <div class="row" id="enemiesRow">
-            <div class="col-md-12">
-
-                <!--where the enemies will be until they are selected-->
-
-            </div>
-        </div>
-
-
-
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
- 
-</body>
 </html>
