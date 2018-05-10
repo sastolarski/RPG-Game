@@ -1,7 +1,7 @@
 body {
     font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
-    background-image: url(assets/images/milky-way-2695569_1920.jpg)
-
+    background-image: url(../images/milky-way-2695569_1920.jpg);
+  color: yellow;
   }
   
   img {
@@ -27,6 +27,7 @@ body {
     border-color: green;
     border-style: solid;
     border-width: 3px;
+    color: black;
   }
   
   .character-image {
