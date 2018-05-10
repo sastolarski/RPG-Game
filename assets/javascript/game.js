@@ -21,7 +21,7 @@ $(document).ready(function() {
     },
     "C3P0": {
       name: "C3P0",
-      health: 180,
+      health: 140,
       attack: 7,
       imageUrl: "assets/images/c3po.png",
       enemyAttackBack: 25
