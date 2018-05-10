@@ -99,16 +99,16 @@ $(document).ready(function() {
     // Function which handles restarting the game after victory or defeat.
     var restartGame = function(resultMessage) {
       // When the 'Restart' button is clicked, reload the page.
-      var restart = $("<button>Restart</button>").click(function() {
+      var restart = $("<button class='endGame'>Restart</button>").click(function() {
         location.reload();
       });
   
       // Build div that will display the victory/defeat message.
-      var gameState = $("<div>").text(resultMessage);
+      var gameState = $("<div>").text(resultMessage).addClass("endGame");
   
       // Render the restart button and victory/defeat message to the page.
-      $("body").append(gameState);
-      $("body").append(restart);
+      $("#endGame").append(gameState);
+      $("#endGame").append(restart);
     };
   
     // Function to clear the game message section
